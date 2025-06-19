@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mijn Projecten</title>
+  <title>Over mij</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
-
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="bg-dark text-light">
   <header class="border-bottom border-secondary sticky-top bg-dark">
@@ -18,8 +17,8 @@
       <nav>
         <ul class="nav nav-pills justify-content-center gap-3">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about-me.html" class="nav-link">Over mij</a></li>
-          <li class="nav-item"><a href="projects.html" class="nav-link active">Projecten</a></li>
+          <li class="nav-item"><a href="about-me.html" class="nav-link active">Over mij</a></li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projecten</a></li>
           <li class="nav-item"><a href="portfolio-info.html" class="nav-link">Portfolio Info</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -28,72 +27,65 @@
   </header>
 
   <main class="container my-5">
-    <h2 class="mb-4 text-center gradient-text text-primary">Mijn Projecten</h2>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <!-- Project 1 -->
-      <article class="col" aria-label="Project Hoger Lager">
-        <div class="card h-100 bg-dark border-primary shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <h3 class="card-title text-primary">Hoger Lager</h3>
-            <p class="card-text flex-grow-1 text-primary">Een eenvoudig gokspel gemaakt met JavaScript waar spelers moeten raden of het volgende nummer hoger of lager zal zijn.</p>
-            <div class="mb-3" aria-label="Technologietags">
-              <span class="badge bg-secondary me-1 text-primary">HTML</span>
-              <span class="badge bg-secondary me-1 text-primary">CSS</span>
-              <span class="badge bg-secondary text-primary">JavaScript</span>
-            </div>
-            <a href="#" class="btn btn-primary" aria-label="Bekijk live demo van Hoger Lager">Live demo</a>
-          </div>
+    <section class="row align-items-center mb-5">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="card bg-dark border-primary p-4">
+          <h2 class="gradient-text mb-4">Over mij</h2>
+          <p class="text-primary">Hallo! Ik ben Yedien, een beginnend webdeveloper met een passie voor het creëren van mooie en functionele websites.</p>
+          <p class="text-primary">Momenteel volg ik een opleiding in software development waar ik mijn vaardigheden in HTML, CSS, JavaScript en andere webtechnologieën ontwikkel.</p>
+          <p class="text-primary">Mijn doel is om gebruiksvriendelijke, toegankelijke en visueel aantrekkelijke websites te bouwen die een positieve gebruikerservaring bieden.</p>
         </div>
-      </article>
+      </div>
+      <div class="col-md-6">
+        <img src="img/PROFILE.jpg" class="img-fluid rounded border border-primary rounded-circle w-50" loading="lazy">
+      </div>
+    </section>
 
-      <!-- Project 2 -->
-      <article class="col" aria-label="Project Build a Game">
-        <div class="card h-100 bg-dark border-primary shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <h3 class="card-title text-primary">Build a Game</h3>
-            <p class="card-text flex-grow-1 text-primary">Een interactief spel waarbij je elementen kunt bouwen en combineren om nieuwe objecten te creëren.</p>
-            <div class="mb-3" aria-label="Technologietags">
-              <span class="badge bg-secondary me-1 text-primary">HTML</span>
-              <span class="badge bg-secondary me-1 text-primary">CSS</span>
-              <span class="badge bg-secondary text-primary">JavaScript</span>
-            </div>
-            <a href="#" class="btn btn-primary" aria-label="Bekijk live demo van Build a Game">Live demo</a>
+    <section class="mb-5">
+      <div class="card bg-dark border-primary p-4">
+        <h2 class="gradient-text mb-4">Mijn Vaardigheden</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-primary">Technische vaardigheden</h3>
+            <ul class="text-primary">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (basis)</li>
+              <li>Bootstrap 5</li>
+              <li>Responsive design</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-primary">Persoonlijke eigenschappen</h3>
+            <ul class="text-primary">
+              <li>Leergierig</li>
+              <li>Creatief</li>
+              <li>Oog voor detail</li>
+              <li>Probleemoplossend</li>
+              <li>Teamplayer</li>
+            </ul>
           </div>
         </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Project 3 -->
-      <article class="col" aria-label="Project Review your experience">
-        <div class="card h-100 bg-dark border-primary shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <h3 class="card-title text-primary">Review your experience</h3>
-            <p class="card-text flex-grow-1 text-primary">Een review systeem waar gebruikers hun ervaringen kunnen delen en beoordelen.</p>
-            <div class="mb-3" aria-label="Technologietags">
-              <span class="badge bg-secondary me-1 text-primary">HTML</span>
-              <span class="badge bg-secondary me-1 text-primary">CSS</span>
-              <span class="badge bg-secondary text-primary">PHP</span>
-            </div>
-            <a href="#" class="btn btn-primary" aria-label="Bekijk live demo van Review your experience">Live demo</a>
+    <section>
+      <div class="card bg-dark border-primary p-4">
+        <h2 class="gradient-text mb-4">Mijn Opleiding</h2>
+        <div class="timeline">
+          <div class="timeline-item mb-4">
+            <h3 class="text-primary">Software Developer</h3>
+            <p class="text-muted text-primary">ROC Mondriaan | 2023 - Heden</p>
+            <p class="text-primary">Opleiding tot software developer met focus op webdevelopment, programmeren en software engineering.</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="text-primary">Vorig Onderwijs</h3>
+            <p class="text-muted text-primary">[Naam school] | [Jaar] - [Jaar]</p>
+            <p class="text-primary">Korte beschrijving van je vorige opleiding of relevante ervaring.</p>
           </div>
         </div>
-      </article>
-
-      <!-- Project 4 -->
-      <article class="col" aria-label="Project Keuzedeel">
-        <div class="card h-100 bg-dark border-primary shadow-sm">
-          <div class="card-body d-flex flex-column">
-            <h3 class="card-title text-primary">Keuzedeel</h3>
-            <p class="card-text flex-grow-1 text-primary">Een project dat de basis legt voor een keuzedeel in webontwikkeling.</p>
-            <div class="mb-3" aria-label="Technologietags">
-              <span class="badge bg-secondary me-1 text-primary">HTML</span>
-              <span class="badge bg-secondary me-1 text-primary">CSS</span>
-              <span class="badge bg-secondary text-primary">JavaScript</span>
-            </div>
-            <a href="#" class="btn btn-primary" aria-label="Bekijk live demo van Keuzedeel">Live demo</a>
-          </div>
-        </div>
-      </article>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="bg-dark text-center py-4 border-top border-secondary mt-auto">
